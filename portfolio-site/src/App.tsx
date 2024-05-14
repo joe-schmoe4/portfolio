@@ -25,7 +25,6 @@ function App() {
           <p style={{fontWeight: 'bold',fontSize: '25px'}}>Hello, I'm Darian Chieng. Welcome to my portfolio site!</p>
           <p>Newly Graduated Computer science </p>
         </div>
-    
         <About/>
         <Projects/>
         <Contact/>
