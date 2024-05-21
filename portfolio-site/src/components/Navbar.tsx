@@ -1,19 +1,42 @@
 import './Navbar.scss'
-import Button from '@mui/material/Button';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
+import {Link} from 'react-router-dom'
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
 
 function Navbar() {
   return (
-    <AppBar>
-    <Toolbar id="navbar" >            
-    <Button color="inherit">About</Button>
-    <Button color="inherit">Projects</Button>
-    <Button color="inherit">Journey</Button>
-    <Button color="inherit">Contact</Button>
-    </Toolbar>
-    </AppBar>
-
+    <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+            <Link to='/'>
+              Home
+            </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+            <Link to='/'>
+              About
+            </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+            <Link to='/'>
+              Projects
+            </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+            <Link to='/'>
+              Contact
+            </Link>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
   )
 }
 
