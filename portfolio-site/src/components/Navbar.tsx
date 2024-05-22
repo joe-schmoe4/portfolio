@@ -1,4 +1,4 @@
-import './Navbar.scss'
+import styles from './Navbar.module.scss'
 import {Link} from 'react-router-dom'
 import {
   NavigationMenu,
@@ -14,7 +14,7 @@ import {
 function Navbar() {
   return (
     <NavigationMenu>
-      <NavigationMenuList>
+      <NavigationMenuList className="flex space-x-4">
         <NavigationMenuItem>
             <Link to='/'>
               Home

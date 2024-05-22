@@ -1,4 +1,4 @@
-import './About.scss'
+import styles from './About.module.scss'
 
 function About() {
   return (
