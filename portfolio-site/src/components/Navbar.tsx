@@ -13,30 +13,32 @@ import {
 
 function Navbar() {
   return (
-    <NavigationMenu>
-      <NavigationMenuList className="flex space-x-4">
-        <NavigationMenuItem>
-            <Link to='/'>
-              Home
-            </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-            <Link to='/'>
-              About
-            </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-            <Link to='/'>
-              Projects
-            </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-            <Link to='/'>
-              Contact
-            </Link>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+    <div className='flex items-center justify-center'>
+      <NavigationMenu>
+        <NavigationMenuList className="flex space-x-4">
+          <NavigationMenuItem>
+              <Link to='/'>
+                Home
+              </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+              <Link to='/'>
+                About
+              </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+              <Link to='/'>
+                Projects
+              </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+              <Link to='/'>
+                Contact
+              </Link>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+    </div>
   )
 }
 

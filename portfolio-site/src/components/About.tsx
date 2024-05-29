@@ -1,10 +1,7 @@
 import styles from './About.module.scss'
-
 function About() {
   return (
-    <div>
-      About Darian: 
-      <p> I'm a recent graduated computer science major who's interested in web development. My current projects focus on fullstack using ReactJs and NodeJs.</p>
+    <div className="h-screen">
       <p> Skills: </p>
       <ul>
         <li>ReactJs</li>
@@ -19,7 +16,6 @@ function About() {
         <li>LinkedIn</li>
         <li>GitHub</li>
       </ul>
-
     </div>
   )
 }
