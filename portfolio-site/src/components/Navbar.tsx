@@ -13,7 +13,7 @@ import {
 
 function Navbar() {
   return (
-    <div className='flex items-center justify-center'>
+    <div className='flex items-center justify-center sticky top-0 bg-white z-50'>
       <NavigationMenu>
         <NavigationMenuList className="flex space-x-4">
           <NavigationMenuItem>

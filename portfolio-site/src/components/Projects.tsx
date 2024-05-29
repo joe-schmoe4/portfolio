@@ -7,12 +7,25 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import { motion } from 'framer-motion';
 
 function Projects() {
   return (
-    <div className="h-screen">
+    <motion.div className="h-screen"
+    initial={{
+      opacity: 0,
+      y: 50,
+    }}
+    whileInView={{
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        delay: 0.6,
+      },
+    }}>
       Projects: 
-    </div>
+    </motion.div>
   )
 }
 

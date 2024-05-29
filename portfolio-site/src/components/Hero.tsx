@@ -6,7 +6,19 @@ import {useRef} from 'react'
 
 export default function Hero() {
   return (
-    <div className="h-screen">
+    <motion.div className="h-screen max-w-3xl w-full"  
+    initial={{
+      opacity: 0,
+      y: 50,
+    }}
+    whileInView={{
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        delay: 0.6,
+      },
+    }}>
          <h1 className="text-6xl font-extrabold leading-snug">
         Hi, I'm
         <br />
@@ -24,7 +36,7 @@ export default function Hero() {
         }}
         transition={{
           duration: 1,
-          delay: 1.5,
+          delay: 1,
         }}
       >
         I'm a recent graduated computer science major who's interested in web development. 
@@ -49,7 +61,7 @@ export default function Hero() {
       >
         Contact me
       </motion.button>
-
+{/* 
         <Canvas>
           <directionalLight position={[0,0,2]} intensity={0.5}/>
           <ambientLight intensity={0.6}/>
@@ -61,7 +73,7 @@ export default function Hero() {
             <meshStandardMaterial color={"green"}/>
            
           </mesh>
-        </Canvas>
-     </div>  
+        </Canvas> */}
+     </motion.div>  
   )
 }
