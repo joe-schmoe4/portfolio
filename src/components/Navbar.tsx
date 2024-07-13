@@ -13,28 +13,28 @@ import {
 
 function Navbar() {
   return (
-    <div className='flex items-center justify-center sticky top-0 bg-white z-50'>
+    <div className='flex items-center justify-center sticky top-0 bg-black text-white z-50 p-4 w-full'>
       <NavigationMenu>
         <NavigationMenuList className="flex space-x-4">
           <NavigationMenuItem>
-              <Link to='/'>
-                Home
-              </Link>
+            <Link to='/'>
+              Home
+            </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <Link to='/'>
-                About
-              </Link>
+            <Link to='/'>
+              About
+            </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <Link to='/'>
-                Projects
-              </Link>
+            <Link to='/'>
+              Projects
+            </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <Link to='/'>
-                Contact
-              </Link>
+            <Link to='/'>
+              Contact
+            </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
